@@ -12,8 +12,12 @@ class Wallet
 
   def withdraw(amount)
     return unless @balance >= amount
+
+    if @balance < amount
+      return
+    end
+
     @balance -= amount.to_i
     amount
   end
-
 end

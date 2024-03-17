@@ -11,5 +11,4 @@ class User
     @name = name
     @wallet = Wallet.new(self) # UserインスタンスまたはUserを継承したクラスのインスタンスは生成されると、自身をオーナーとするウォレットを持ちます。
   end
-
 end
